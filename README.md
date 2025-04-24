@@ -13,22 +13,10 @@ CREATE TABLE public.users (
 );
 ```
 
-create the .env file and similar to .env.example
-
-run the project using the command below
-npm install
-npm run start
 
 ### Installation
 
-1. Clone the repository:
-
-```bash
-git clone <repository-url>
-cd sideproject
-```
-
-2. Install dependencies:
+1. Install dependencies:
 
 ```bash
 npm install
@@ -39,18 +27,15 @@ npm install
 
 ```
 DATABASE_URL=your_database_url
+CSV_PATH = "data/sample_users.csv"
 ```
 
-4. Push database schema:
 
-```bash
-npm run db:push
+3. Run the program:
+   Create a `.env` file in the root directory with:
+
+```
+npm run start
 ```
 
-### Development
 
-Start the development server:
-
-```bash
-npm run dev
-```
