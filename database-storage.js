@@ -8,8 +8,7 @@ export async function insetUsersBatch(users) {
     await client.query("BEGIN");
     for (const user of users) {
       await client.query(
-        `INSERT INTO users(name, age, address, additional_info)
-           VALUES ($1, $2, $3, $4)`,
+        `INSERT INTO users(name, age, address, additional_info) VALUES ($1, $2, $3, $4)`,
         [user.name, user.age, user.address, user.additional_info]
       );
     }
@@ -22,6 +21,7 @@ export async function insetUsersBatch(users) {
     console.log("db connection closed");
   }
 }
+
 
 export async function getAgeGroup() {
   let client;
