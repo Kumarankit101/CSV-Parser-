@@ -1,6 +1,12 @@
 # Kelp CSV User Importer
 
+## The main programming concept used is streaming the CSV file to minimize memory usage, while inserting rows into the database in batches.
+
+
+
 ## PostgreSQL Table Setup
+
+
 
 Before running the project, create the required `users` table in your PostgreSQL database:
 ```
