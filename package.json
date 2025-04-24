@@ -1,0 +1,15 @@
+{
+  "name": "kelp",
+  "version": "0.0.1",
+  "description": "csv parsor",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.5.0",
+    "pg": "^8.15.5"
+  }
+}
